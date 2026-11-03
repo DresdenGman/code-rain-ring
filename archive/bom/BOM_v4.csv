@@ -1,0 +1,24 @@
+item,part,qty,LCSC_or_source_id,key_dims_mm,key_spec,approx_price,source_url,notes
+Band (proto - superseded by unibody v3),316L stainless open band ring high polish (Everful 'Serrin & Alloy'),1,Everful,5mm wide (US9 listed) - thickness not stated,adjustable open; 316L,USD 1.94,https://www.everfulwholesale.com/products/simple-ring-stainless-steel-smooth-opening-ring-titanium-steel-bracelet-ornament,PROTO ONLY; we bead-blast it matte; 5mm (model assumes 6x1.6)
+Band (superseded v3: band is now cast/CNC integral),Dongguan HonHo 304/316L ring blank custom (width 3/4/6/8; thick 1.5/2.0/2.5; polished/brushed/matte),MOQ 100/size,GoldSupplier p173654929,6 x 1.6 (to order) ,ISO9001 factory; custom open-end,inquire,https://www.goldsupplier.com/provide/p173654929.html,ask for 6.0x1.6mm open band ID ~20.6 with 8mm gap; adjustable listing variant p173656109 states US5-12 only
+Band alt,HonHo adjustable 304L 1.5mm thick 3/4/5mm wide US5-12,1,GoldSupplier p173656109,w3-5 x 1.5,adjustable,inquire,https://www.goldsupplier.com/provide/p173656109.html,
+Band alt (tray type; rejected for height),304 SS adjustable ring base round tray 12mm ID19 (STAS-D374-01P-04),20/pk,PandaWhole,tray 12/14; ID 19,,USD 3.20/20pcs,PandaWhole STAS-D374-01P-04 (see v2 research),tray adds ~2-3mm height and looks like a cabochon ring - not used
+Display,0.42in 72x40 OLED SSD1306 COG 16pin FPC (ZJY042-7240TSWEG01 etc),1,Taobao '0.42寸 OLED 72x40 裸屏',12.0 x 11.0 x 1.227,AA 9.196x5.18,~RMB 8-15 (est.),ZJY042-7240TSWEG01 datasheet (search),%20SSD1306)/0.42-ZJY042-7240TSWEG01.pdf,white; green via tinted cover glass
+Cover glass,0.55mm glass/sapphire 14.6x10.6 R1.6 + green/black AR print,1,custom (Shenzhen cover-glass shop),14.6 x 10.6 x 0.55,flush with top,~RMB 2-10 (est.),(no verified listing),ASSUMPTION
+MCU,WCH CH32V003F4U6 QFN20,1,LCSC C5299908,3.0 x 3.0,standby ~9-10.5uA,USD 0.31 @5+,https://www.lcsc.com/product-detail/C5299908.html,
+Battery,GEB201212 LiPo 3.7V 10mAh,1,joybattery / GEB,2.0 x 12 x 12 (max),1C=10mA charge,inquire,https://www.joybattery.net/sale-8086607-ultra-thin-battery-3-7v10mah-201212-300910-small-size-lipo-cell-for-electronic-bluetooth-flash-memor.html,also https://www.geblipo.com/lithium-polymer-battery/ ; Taobao search '201212 锂电池'
+Battery alt (more life +1mm height),301012 30mAh,1,VCELL VP301012,3.0 x 10.2 x 12.2,,RMB 5.99 (abaosol),VCELL VP301012 page (search),
+Charger,TP4054 SOT-23-5,1,LCSC C382138,2.9 x 2.8,RPROG 100k -> 10mA,~RMB 0.2 (est.),https://www.lcsc.com/product-detail/C382138.html,
+LDO,Torex XC6206P332MR-G SOT-23,1,LCSC C5446,2.9 x 2.8,Iq 1uA,~RMB 0.3 (est.),https://www.lcsc.com/product-detail/C5446.html,
+USB-C,TYPE-C 6PIN SMD (SHOU HAN),1,LCSC C7507406,~8.94 x 6.8 x 3.16,power only,~RMB 0.3-0.6 (est.),https://www.lcsc.com/product-detail/C7507406.html,model assumes mid-mount; GCT USB4515 alt
+Passives,0402 R/C set,~12,LCSC basic parts,0402,,~RMB 0.5,,
+PCB,2-layer 0.6mm FR4 12.8x10.8 (JLCPCB),1,JLCPCB,12.8 x 10.8 x 0.6,,~RMB 20-50/5pcs (est.),,
+Screws,M1.0 x 2.5 self-tapping (or M1.0 machine + thread in metal),2,Taobao 'M1 螺丝 不锈钢',,,~RMB 0.05 (est.),,
+Proto board,ESP32-C3 0.42in OLED board,1,Taobao 'ESP32-C3 0.42 OLED',~25 x 20.5,,~RMB 15-25 (est.),Lonely Binary ESP32-C3 OLED product page,validation only
+Wake (tap),Silan SC7A20HTR 3-axis accel LGA-12 2x2 (single/double-tap INT),1,LCSC C19274408,2.0 x 2.0 x 1.0,low-power ~2uA (datasheet SC7A20),USD 0.29 @1,https://www.lcsc.com/product-detail/C19274408.html,INT1 -> CH32V003 EXTI wake; no openings in metal shell
+Wake alt,ST LIS2DH12TR LGA-12 2x2,1,LCSC C110926,2.0 x 2.0 x 1.0,ultra-low-power with tap INT,USD ~0.53-0.94,https://www.lcsc.com/product-detail/C110926.html,more firmware references; pin-compatible footprint class
+Unibody shell,head+band one-piece (925 silver lost-wax / 316L MIM / CNC Ti) bead-blasted,1,factory,see cad/v3_unibody.stl,~1.16 cm3 -> 316L ~9.2g / 925Ag ~12.0g / Ti ~5.2g / Al ~3.1g (est.),quote,,band open gap 8mm springs for US9-13
+v4 change,Battery x2,LIP-020815 (2x8x15mm 9mAh) lithiumion-battery.com,2,竖放于左右肩部,并联需同批次配对+各自保护;替代GEB201212
+v4 change,PCB,0.6mm FR4 8.7x12.8mm 单面贴片,1,元件≤0.8mm高(QFN/0402),
+v4 change,Lens,0.4mm 蓝宝石/康宁玻璃 19x13 R1.2 黑色丝印边,1,定制,
+v4 change,Unibody,U形直壁一体壳 17mm宽 外宽24.6 (S/M/L三个尺码),1,体积≈2.49cm³ (925银≈26g/316L≈20g/钛≈11g 估算),

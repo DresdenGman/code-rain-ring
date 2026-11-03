@@ -1,0 +1,112 @@
+{
+ "chk": {
+  "bat_vs_finger_vol": 0.0,
+  "bat_vs_shellmetal": 0.0,
+  "glass_vs_bat": 0.0,
+  "glass_vs_shell": 0.0,
+  "socket_vs_strip": 0.0,
+  "strip_vs_shell": 0.0,
+  "oled_vs_shell": 8.03009999999996,
+  "pcb_vs_shell": 2.215199999999998,
+  "oled_vs_bat": 0.0
+ },
+ "geo": {
+  "R": 12.0,
+  "ri": 10.5,
+  "rr": 11.0,
+  "z_top": 15.15,
+  "head_thk": 4.15,
+  "stack": {
+   "chips": [
+    11.5,
+    12.35
+   ],
+   "pcb": [
+    12.35,
+    12.75
+   ],
+   "oled": [
+    12.75,
+    14.2
+   ],
+   "glue": [
+    14.2,
+    14.25
+   ],
+   "glass": [
+    14.25,
+    14.65
+   ],
+   "lip": [
+    14.65,
+    15.15
+   ]
+  },
+  "bat_z": [
+   6.65,
+   14.65
+  ],
+  "bat_y": [
+   9.5,
+   11.5
+  ],
+  "total_bat_corner_to_finger": 1.0962278349470171,
+  "groove_band_remaining": 0.8200000000000001,
+  "socket_back_wall": 0.5,
+  "pad_flat_halfchord": 4.47213595499958,
+  "head_floor_center": 0.5,
+  "top_lip": 0.5,
+  "side_wall": 0.5,
+  "bat_raise_needed_for_0p5": 0.14502759376295504,
+  "shell_vol": 2970.317628924076,
+  "strip_vol": 23.21274626678717,
+  "valid": true,
+  "strip_a0": 35.27283704530039,
+  "strip_a1": 120.597128432307,
+  "strip_flat_L_midline": 16.008790528818775,
+  "strip_flat_W": 2.9,
+  "strip_t": 0.5,
+  "strip_inner_arc": 15.6364930746602,
+  "strip_outer_arc": 16.381087982977352,
+  "batR_corner_to_inner_surface": 1.0962278349470171,
+  "band_under_groove": 0.8200000000000001,
+  "band_under_recess": 1.0,
+  "pad_slot_open_len_midline": 4.551610264047104,
+  "wall_batL_to_bore": 1.0962278349470176,
+  "wall_batR_to_bore": 1.0962278349470185,
+  "wall_batL_to_channel": 0.8462278349470188,
+  "wall_batL_to_strip_recess": 1.0076842042909648,
+  "wall_batL_to_epoxy_groove": 0.8462278349470188,
+  "wall_batL_to_flex_slot": 0.6999999999999993,
+  "glass_gap_each_side": 0.09999999999999964,
+  "epoxy_zone_A_deg": [
+   120.8699654776074,
+   133.3699654776074
+  ],
+  "epoxy_zone_A_arc_mm": 2.2907446432425576,
+  "epoxy_zone_B_deg": [
+   10.740645756434859,
+   35.0
+  ],
+  "epoxy_zone_B_arc_mm": 4.4457588625576365,
+  "band_under_epoxy_groove": 1.25,
+  "hole_y": -8.3,
+  "glass": [
+   18.8,
+   13.9
+  ],
+  "window": [
+   18.2,
+   13.3
+  ],
+  "oled": [
+   18.1,
+   18.46
+  ],
+  "cavity_x": 17.8,
+  "oled_x_overhang_each_end": 0.15000000000000036,
+  "oled_y_gap_to_bat": 0.2699999999999996,
+  "border_LR": 2.9000000000000004,
+  "border_TB": 2.75
+ }
+}
