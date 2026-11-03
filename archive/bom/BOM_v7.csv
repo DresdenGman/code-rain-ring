@@ -1,29 +1,29 @@
-类别,位号/用途,型号,封装/尺寸(mm),数量,LCSC编号或淘宝关键词,单价估算,备注
-MCU,U1,ATtiny1616-MNR (tinyAVR 1系列 无射频),QFN-20 3x3x0.9,1,C507118,约¥4-6,1.8-5.5V直接锂电供电；掉电休眠约0.1µA；Arduino: megaTinyCore；UPDI单线烧录(PCB留测试点)
-MCU备选,U1,CH32V003F4U6,QFN-20 3x3,0,C5299908,约¥0.6,便宜；官方Arduino核；但最低工作电压2.7V(锂电末端余量小)、待机电流比ATtiny高 → 作备选
-唤醒,U2,SC7A20 三轴加速度计(敲击/双击中断→MCU INT),LGA-12 2x2x1,1,C19274408,约¥1,国产 寄存器兼容LIS2DH12
-唤醒备选,U2,LIS2DH12TR,LGA-12 2x2x1,0,C110926,约¥3-5,ST原厂
-充电,U3,TP4054 线性充电 约15mA,SOT-23-5,1,C382138,约¥0.3,R_PROG=68kΩ(估算 I≈1000V/R)
-编程电阻,R1,68kΩ 1% 0402,0402,1,LCSC基础库,—,
-电池保护,U4/U5,XB5353A 单芯片保护(内置MOS),SOT-23-5,2,C80628,约¥0.3,每节电池一颗
-LDO,U6,XC6206P302MR 3.0V 低静态(约1µA),SOT-23,1,LCSC搜型号XC6206P302MR,约¥0.2,给OLED/MCU/加速度计；编号下单前确认
-输入保护,D1,肖特基二极管 VIN串联,SOD-923/0201,1,LCSC基础库,—,磁吸触点接VIN不直接接电池
-ESD,D2,ESD TVS 5V,0201/SOD-882,1,LCSC基础库,—,
-屏幕,DS1,0.66寸 OLED 64x48 SSD1306 白色 裸屏,面板18.46x18.1x1.25(偏光片17.46) 可视15.42x12.06 显示13.42x10.06; FPC 28pin 0.65mm 焊接式 宽约18.55,1,淘宝:0.66寸OLED 64x48 裸屏 28pin 焊接,约¥8-12(估算),v7定型；FPC从屏-X边引出 向下折到屏背面 拖焊到PCB顶面28焊盘
-充电口,J1,WIRE cx-4mm-jz 4mm圆形磁吸母座(已有),Φ4 x 2.0 (尾部台阶Φ3.7) 端面:外环Φ2.2(−) 中心针Φ1(+),1,拼多多/淘宝:4mm圆形磁吸母座 cx-4mm,—,装在底盖Φ4.1孔 端面朝手指 尾部焊盘直接焊PCB底面；配套USB公头磁吸线(已有)
-电池,BT1/BT2,LIP-020815 锂聚合物 3.7V 9mAh,2.0x8x15 (电芯本体15 不含保护板；极耳约6 折弯),2,1688:200815 锂电池 / https://www.1688.com/industry/-ib9mk6.html,约¥12/只,两侧电池腔各1只(y=±9.8~11.8 腔长20.2)；极耳折弯后总长≤19；无保护板(保护在主PCB XB5353A)；需样品验证
-PCB,PCB1,嘉立创 4层或2层 FR-4 0.4mm 沉金,19.6x19.2 R0.8 圆角矩形 厚0.4,1,嘉立创下单(JLCPCB) + SMT贴片,样板约¥50-150/5片(估算),顶面:FPC 28x0.65焊盘(焊盘区宽18.2)；底面:元件+磁吸座焊盘；电池焊盘在±Y两边
-外壳,—,主体+底盖 金属3D打印,见 deliver/CodeRain_v7_金属打印.zip,1套,珠光金属3D打印,待报价,
-盖板,—,玻璃/蓝宝石盖板 23.0x19.6 R1.2 t0.4 丝印黑边(窗口≈15.5x12.1),23.0x19.6x0.4,1,淘宝:定制 蓝宝石/钢化玻璃 小片 丝印黑边,待询价,
-不用,—,TTP223 / 按键 / USB-C,—,0,—,—,v1不使用：外壳无按键孔；唯一开口为磁吸充电口
-OLED外围,C1(C1P-C1N) C2(C2P-C2N),电荷泵电容 1µF 16V X5R,0402,2,C52923,约¥0.01,SSD1306内置电荷泵 VBAT直接接电池(3.3-4.2V)
-OLED外围,C3,VCOMH电容 4.7µF X5R,0402,1,C23733,约¥0.02,VCOMH到GND
-OLED外围,C4,VCC去耦 4.7µF(电荷泵输出≈7.5V 选≥10V/16V),0402,1,C23733,约¥0.02,VCC到GND 靠近FPC焊盘
-OLED外围,C5 C6,VDD/VBAT去耦 1µF,0402,2,C52923,约¥0.01,
-OLED外围,C7 C8,VDD/VBAT 0.1µF,0402,2,C1525,约¥0.01,
-OLED外围,R2,IREF 电阻 560kΩ 1%,0402,1,LCSC搜 0402WGF5603TCE (编号未核),约¥0.01,按屏厂规格书取值(常见390k-910k)；到手屏规格书为准
-OLED外围,R3 C9,RES# 复位 RC: 10kΩ上拉 + 0.1µF,0402,1,R:C25744 / C:C1525,—,RES#接MCU GPIO(软件复位≥3µs)，RC保证上电复位
-OLED外围,R4 R5,I2C上拉 4.7kΩ,0402,2,C25900,约¥0.01,SCL/SDA 共用加速度计
-OLED外围,—,BS接线(I2C模式),—,0,—,—,BS0=GND BS1=VDD BS2=GND；CS#=GND；D/C#(SA0)=GND→地址0x3C；D0=SCL；D1与D2短接=SDA；D3-D7接GND
-OLED外围,J2,FPC焊盘 28x0.65mm 焊接式,PCB封装 焊盘0.35x1.6 间距0.65,0,—,—,按屏规格书引脚定义画；焊盘区总宽18.2
-被动件,其余,TP4054/LDO/加速度计去耦等,0402,6,C1525/C52923,—,LCSC编号均为常用基础库件，下单前请在立创商城核对
+Category,Ref/Purpose,Part,Package/Size (mm),Qty,LCSC number or Taobao keyword,Est. unit price,Notes
+MCU,U1,ATtiny1616-MNR (tinyAVR 1-series no radio),QFN-20 3x3x0.9,1,C507118,~CNY 4-6,Runs directly from LiPo at 1.8-5.5V; power-down sleep ~0.1µA; Arduino: megaTinyCore; single-wire UPDI programming (test points on PCB)
+MCU alt,U1,CH32V003F4U6,QFN-20 3x3,0,C5299908,~CNY 0.6,Cheap; official Arduino core; but min. operating voltage 2.7V (little margin at end of LiPo discharge) and higher standby current than ATtiny -> alternative
+Wake,U2,SC7A20 3-axis accelerometer (tap/double-tap interrupt -> MCU INT),LGA-12 2x2x1,1,C19274408,~CNY 1,Chinese part; register-compatible with LIS2DH12
+Wake alt,U2,LIS2DH12TR,LGA-12 2x2x1,0,C110926,~CNY 3-5,ST original
+Charging,U3,TP4054 linear charger ~15mA,SOT-23-5,1,C382138,~CNY 0.3,R_PROG=68kΩ (estimate I≈1000V/R)
+Program resistor,R1,68kΩ 1% 0402,0402,1,LCSC basic library,—,
+Battery protection,U4/U5,XB5353A single-chip protection (built-in MOSFET),SOT-23-5,2,C80628,~CNY 0.3,One per cell
+LDO,U6,XC6206P302MR 3.0V low quiescent (~1µA),SOT-23,1,LCSC search XC6206P302MR,~CNY 0.2,Supplies OLED/MCU/accelerometer; confirm part number before ordering
+Input protection,D1,Schottky diode in series with VIN,SOD-923/0201,1,LCSC basic library,—,Magnetic contacts go to VIN; not directly to the battery
+ESD,D2,ESD TVS 5V,0201/SOD-882,1,LCSC basic library,—,
+Display,DS1,0.66in OLED 64x48 SSD1306 white bare panel,Panel 18.46x18.1x1.25 (polarizer 17.46) viewing 15.42x12.06 active 13.42x10.06; FPC 28pin 0.65mm solder type width ~18.55,1,Taobao: 0.66in OLED 64x48 bare panel 28pin solder,~CNY 8-12 (est.),v7 frozen; FPC exits the -X edge of the panel and folds under it; drag-soldered to 28 pads on the PCB top
+Charging port,J1,WIRE cx-4mm-jz 4mm round magnetic receptacle (on hand),Φ4 x 2.0 (rear step Φ3.7) face: outer ring Φ2.2 (−) centre pin Φ1 (+),1,Pinduoduo/Taobao: 4mm round magnetic receptacle cx-4mm,—,Fits the Φ4.1 hole in the bottom lid; face toward the finger; rear pads soldered to the PCB bottom; matching USB magnetic cable (on hand)
+Battery,BT1/BT2,LIP-020815 LiPo 3.7V 9mAh,2.0x8x15 (cell body 15 excluding protection board; tabs ~6 bent),2,1688: 200815 lithium battery / https://www.1688.com/industry/-ib9mk6.html,~CNY 12 each,One per side battery cavity (y=±9.8~11.8 cavity length 20.2); total length with tabs bent ≤19; no protection board (protection on main PCB XB5353A); verify with samples
+PCB,PCB1,JLCPCB 4- or 2-layer FR-4 0.4mm ENIG,19.6x19.2 R0.8 rounded rectangle thickness 0.4,1,JLCPCB order + SMT assembly,~CNY 50-150 per 5 prototypes (est.),Top: 28x0.65 FPC pads (pad area width 18.2); bottom: components + receptacle pads; battery pads on the ±Y sides
+Shell,—,Body + bottom lid metal 3D print,See deliver/CodeRain_v7_metal_print.zip,1 set,Metal 3D printing service,Quote pending,
+Cover,—,Glass/sapphire cover 23.0x19.6 R1.2 t0.4 printed black border (window ≈15.5x12.1),23.0x19.6x0.4,1,Taobao: custom small sapphire/tempered glass with printed black border,Quote pending,
+Not used,—,TTP223 / button / USB-C,—,0,—,—,Not used in v1: no button hole in the shell; the only opening is the magnetic charging port
+OLED support,C1(C1P-C1N) C2(C2P-C2N),Charge pump capacitor 1µF 16V X5R,0402,2,C52923,~CNY 0.01,SSD1306 internal charge pump; VBAT directly from battery (3.3-4.2V)
+OLED support,C3,VCOMH capacitor 4.7µF X5R,0402,1,C23733,~CNY 0.02,VCOMH to GND
+OLED support,C4,VCC decoupling 4.7µF (charge pump output ≈7.5V; choose ≥10V/16V),0402,1,C23733,~CNY 0.02,VCC to GND close to the FPC pads
+OLED support,C5 C6,VDD/VBAT decoupling 1µF,0402,2,C52923,~CNY 0.01,
+OLED support,C7 C8,VDD/VBAT 0.1µF,0402,2,C1525,~CNY 0.01,
+OLED support,R2,IREF resistor 560kΩ 1%,0402,1,LCSC search 0402WGF5603TCE (number not checked),~CNY 0.01,Value per panel datasheet (typically 390k-910k); the delivered panel's datasheet governs
+OLED support,R3 C9,RES# reset RC: 10kΩ pull-up + 0.1µF,0402,1,R:C25744 / C:C1525,—,RES# to an MCU GPIO (software reset ≥3µs); RC ensures power-on reset
+OLED support,R4 R5,I2C pull-ups 4.7kΩ,0402,2,C25900,~CNY 0.01,SCL/SDA shared with the accelerometer
+OLED support,—,BS strapping (I2C mode),—,0,—,—,BS0=GND BS1=VDD BS2=GND; CS#=GND; D/C#(SA0)=GND -> address 0x3C; D0=SCL; D1 and D2 shorted = SDA; D3-D7 to GND
+OLED support,J2,FPC pads 28x0.65mm solder type,PCB footprint pad 0.35x1.6 pitch 0.65,0,—,—,Draw per the panel datasheet pinout; total pad area width 18.2
+Passives,Others,TP4054/LDO/accelerometer decoupling etc,0402,6,C1525/C52923,—,All LCSC numbers are common basic-library parts; verify on LCSC before ordering

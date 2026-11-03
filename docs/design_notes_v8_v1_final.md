@@ -1,0 +1,12 @@
+# CodeRain v8 = v1 frozen dimensions (size M, ID Φ20.6 ≈ US 11)
+- Display: 0.66" 64x48 compact type 16.5x16.2x1.23, active area 13.42x10.06, ST7315, 14-pin soldered FPC (pitch provisionally 0.7, pending datasheet)
+- Exterior 20.6 (along finger) x 24.6 (width) x 27.1 (height); head 4.5 above the bore; parallel-sided one-piece U
+- Face 24.6 x 20.6; cover 21.2x17.6 R1.2 t0.4 (black border printed on the back); metal bezel 1.7 (across) / 1.5 (along finger)
+- Display pocket 16.8 (Y) x 17.4 (X) x 1.3 at z13.1–14.4; FPC folds down from the −X edge, ~1.2 bend allowance in X (panel offset +X 0.3)
+- Battery cavities y±9.5~11.5, z5.6~13.9, length 19.0; 2x 020815 (body 15, ≤18 with tabs bent); 0.5 metal shelf above supports the cover
+- PCB 18.6x18.6x0.4 at z12.4–12.8; magnetic socket Φ4.1 at the centre of the bottom lid (inner bore)
+- Volume: body 2679.1 + lid 177.8 = 2857 mm³; shell weight 316L ≈22.8 g / Ti ≈12.7 g / 925 silver ≈29.7 g; + parts ≈2.5 g (est)
+- Why the face cannot be 20 wide: ID 20.6 + two side walls, and the 2 mm cells live in the side walls, so 24.6 outer width is the minimum
+- Provisional 14-pin pinout: C2P C2N C1P C1N VBAT NC VSS VDD RES# SCL SDA IREF VCOMH VCC (to be confirmed with the seller's datasheet)
+- Updated per the vendor drawing (Zhongjingyuan): FPC neck 7.5 / tail 9.0, extends 10.5, 14 pins at 0.62 pitch spanning 8.06; FPC narrower than the panel, no widening needed; folds from the −X edge (0.9 margin on the −X side of the pocket), tail bonded to pads on the PCB top
+- Pins: 4 C1P, 5 VBAT, 6 NC, 7 VSS, 11 SDA, 12 IREF, 13 VCOMH, 14 VCC; 1–3 and 8–10 were not captured (presumed C2P/C2N/C1N, VDD, RES#, SCL); confirm with the seller
